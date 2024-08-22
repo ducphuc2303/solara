@@ -17,3 +17,12 @@ def Baselayout(
         with solara.Div() as content:
             content.app_children(children)
     return layout
+
+# import solara
+
+# @solara.component
+# def BaseLayout(children):
+#     with solara.Column():
+#         solara.Text("My Application Header")
+#         children  # Hiển thị nội dung của các trang
+#         solara.Text("My Application Footer")

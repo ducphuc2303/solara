@@ -1,0 +1,1 @@
+run app: solara run main.py

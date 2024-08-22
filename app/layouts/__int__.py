@@ -1,1 +1,1 @@
-from app.layouts.base import BaseLayout
+from .base import BaseLayout

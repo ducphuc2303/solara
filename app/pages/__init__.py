@@ -1,2 +1,2 @@
-from app.pages.home import HomePage
-from app.pages.viz import VizPage
+from .home import HomePage
+from .viz import VizPage
