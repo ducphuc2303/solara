@@ -23,16 +23,3 @@ def MdEditorDev(
         with solara.Div() as col2:
             solara.Markdown(md_text=current_content)
     return col
-
-
-# import solara
-
-# @solara.component
-# def MdEditorDev():
-#     content, set_content = solara.use_state("")
-
-#     def on_change(new_value):
-#         set_content(new_value)
-
-#     solara.Markdown(content)
-#     solara.TextArea(on_value_change=on_change, value=content)

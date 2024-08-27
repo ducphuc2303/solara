@@ -1,7 +1,6 @@
 from app.route import ROUTES
 import solara
 
-
 def get_routes():
     routes = []
     init_layout=0

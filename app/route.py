@@ -1,7 +1,17 @@
-import solara
-from app.pages import HomePage, VizPage
+from app.pages.home import HomePage
+from app.pages.viz import VizPage
+from app.layouts.base import BaseLayout
 
-routes = [
-    solara.Route(path="/", component=HomePage, name="Home"),
-    solara.Route(path="/viz", component=VizPage, name="Visualization"),
+ROUTES = [
+    {
+        'path': '/',
+        'component': HomePage,
+        'label': 'Trang chủ',
+        'layout': BaseLayout,
+    },
+    {
+        'path': 'viz',
+        'component': VizPage,
+        'label': 'Viz',
+    }
 ]

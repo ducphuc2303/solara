@@ -1,8 +1,5 @@
 import solara
-from app.components import (
-    MdEditorDev
-)
-
+from app.components.md_editor_dev import MdEditorDev
 
 @solara.component
 def HomePage():
@@ -15,9 +12,3 @@ def HomePage():
         
         MdEditorDev(show_edit_md=show_edit_md)
     return page
-
-# import solara
-
-# @solara.component
-# def HomePage():
-#     solara.Text("Welcome to the Home Page")
